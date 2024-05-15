@@ -1,28 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+
+  <!-- Github Signature -->
+  <script src="https://kit.fontawesome.com/00de0829d0.js" crossorigin="anonymous"></script>
+
+  <title>Advice generator app | Frontend Mentor</title>
+
   </style>
 </head>
+
 <body>
 
-  Advice #<!-- Advice ID goes here -->
+  <div class="container">
+    <header>
+      <h4>
+        Advice #<span id="advice-id"></span>
+      </h4>
+    </header>
 
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <main>
+      <p class="quote">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit eius dolorem labore quos omnis
+        laborum tenetur
+        recusandae tempora, odio harum, quae facere debitis voluptatum. Dolore dolores exercitationem corrupti error
+        minima?"</p>
+
+      <img src="images/pattern-divider-desktop.svg" alt="pattern-divider" class="pattern-divider">
+
+      <img src="images/icon-dice.svg" alt="dice-icon" class="dice-icon">
+
+    </main>
+
   </div>
+
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Ryusaem">Ryusaem</a>.
+    </div>
+    <p>
+      Copyright ©
+      <script>
+        document.write(new Date().getFullYear())
+      </script>
+      <a href="https://github.com/Ryusaem" target="_blank">
+        Ryusaem
+        <i class="fa-brands fa-github fa-beat-fade" style="color: #0552d6;"></i>
+      </a>
+    </p>
+  </footer>
+
 </body>
+
 </html>
