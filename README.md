@@ -77,6 +77,11 @@ By implementing this change, each call to getQuote() should now fetch a new advi
     width: 100%;
     }
 
+3.  p.quote::before,
+    p.quote::after {
+    content: "“";
+    }
+
 ### Continued development
 
 - Training more on animation (e.g: transform, transition).

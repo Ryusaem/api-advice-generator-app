@@ -25,6 +25,11 @@ p.quote {
   font-size: 1.3rem;
 }
 
+p.quote::before,
+p.quote::after {
+  content: "“";
+}
+
 h5,
 p.quote {
   margin-bottom: var(--space);
@@ -69,7 +74,7 @@ main img.pattern-divider {
   margin-bottom: 0.9rem;
 }
 
-.test {
+.box {
   border-radius: 100%;
   background-color: var(--color-base-primary-green);
   width: 3rem;
