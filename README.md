@@ -56,6 +56,27 @@ What to write
 
 --
 
+1.  The issue you're encountering with fetching the same advice repeatedly might be due to caching behavior of the Advice Slip API. By default, some APIs cache requests to minimize load on their servers. This means that when you request the same URL repeatedly within a short period, the API might return the same response.
+    Explanation:
+
+        Cache Busting: The URL now includes ?t=${new Date().getTime()}, which appends the current timestamp as a query parameter. Since the timestamp changes every millisecond, this effectively makes each URL unique, thus bypassing the cache.
+        Function Call: The function getQuote() is called once to initialize the advice display. If you need to refresh the quote at regular intervals or through a user action (like clicking a button), you can set up an event listener or a timer.
+
+By implementing this change, each call to getQuote() should now fetch a new advice slip from the API. If you want to ensure that the API is not limiting or caching responses in another unexpected way, you might also consider checking any API documentation or settings provided by the service.
+
+2.  position: relative;
+    top: 15%;
+
+        3. with and without
+        main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+
 ### Continued development
 
 - Training more on animation (e.g: transform, transition).
